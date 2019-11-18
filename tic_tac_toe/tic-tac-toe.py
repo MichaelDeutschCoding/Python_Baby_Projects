@@ -40,7 +40,7 @@ def game():
                 print("Goodbye.")
                 return
             elif move.count(',') != 1:
-                print('Invalid entry. Try again.')
+                print('Your answer must contain exactly one comma. Try again.')
                 continue
             else:
                 move = move.split(',')
@@ -115,3 +115,4 @@ def main():
         print(x_win, '||', o_win)
         again = input("Do you want to play again? (type 'y' for yes): ")
     
+main()
